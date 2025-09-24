@@ -158,7 +158,7 @@ if uploaded_image and uploaded_mask:
             autopct='%1.1f%%', startangle=90)
     ax1.axis('equal')
     fig1.tight_layout()
-    st.pyplot(fig1, width="content")
+    st.pyplot(fig1, width="content")   # ✅ fixed deprecation warning
 
     # --- Save Analysis CSV ---
     analysis_data = {
